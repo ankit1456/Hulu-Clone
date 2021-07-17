@@ -1,0 +1,163 @@
+.header {
+  color: #fff;
+  padding: 2rem;
+}
+
+.header__right {
+  display: flex;
+  flex: 0.35;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logout {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0.6rem 1rem;
+  color: rgb(10, 9, 9);
+  text-transform: uppercase;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+
+.header > img {
+  object-fit: contain;
+  height: 8rem;
+}
+@media (max-width: 960px) {
+  .header > img {
+    height: 7rem;
+  }
+}
+
+.header__icon {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  cursor: pointer;
+  align-items: center;
+  transition: all 0.2s ease-in !important;
+}
+@media (max-width: 840px) {
+  .header__icon {
+    width: 8rem;
+  }
+  .header__logout {
+    padding: 0.3rem 0.6rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 700px) {
+  .header > img {
+    height: 5rem;
+  }
+  .header__icon {
+    width: 7rem;
+  }
+  .header__logout {
+    padding: 0.3rem 0.6rem;
+    font-size: 1.2rem;
+  }
+  .header__icon > .MuiSvgIcon-root {
+    font-size: 2.5rem;
+  }
+  .header__icon:hover > p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 610px) {
+  .header__icon > .MuiSvgIcon-root {
+    font-size: 2.5rem !important;
+  }
+  .header__left {
+    flex: 1;
+  }
+  .header > img {
+    display: none;
+  }
+}
+@media (max-width: 510px) {
+  .header__logout {
+    font-size: 1rem;
+  }
+  .header__icon > .MuiSvgIcon-root {
+    font-size: 2.4rem !important;
+  }
+  .header__avatar {
+    height: 2.6em !important;
+    width: 2.9rem !important;
+  }
+}
+
+@media (max-width: 490px) {
+  .header__logout {
+    font-size: 0.7rem;
+  }
+  .header__icon > .MuiSvgIcon-root {
+    font-size: 2.3rem !important;
+  }
+  .header__avatar {
+    height: 2.6em !important;
+    width: 2.9rem !important;
+  }
+  .header__icon {
+    width: 6rem;
+  }
+  .header__icon:hover > p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 410px) {
+  .header__logout {
+    font-size: 0.5rem;
+  }
+  .header__icon > .MuiSvgIcon-root {
+    font-size: 2.1rem !important;
+  }
+  .header__avatar {
+    height: 2.4em !important;
+    width: 2.7rem !important;
+  }
+  .header__icon:first-child:hover > p {
+    font-size: 0.8;
+  }
+  .header__icon {
+    width: 6rem;
+  }
+  .header__icon:hover > p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .header__logout {
+    font-size: 0.1rem;
+  }
+  .header__icon > .MuiSvgIcon-root {
+    font-size: 1.8rem !important;
+  }
+  .header__avatar {
+    height: 2.2em !important;
+    width: 2.4rem !important;
+  }
+  .header__icon {
+    width: 4rem;
+  }
+  .header__icon:hover > p {
+    display: none;
+  }
+}
+.header__icon > .MuiSvgIcon-root {
+  font-size: 3rem;
+}
+.header__icon > p {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: small;
+  display: none;
+}
+.header__icon:hover > p {
+  display: inline-flex;
+}
+.header__icon--active > p {
+  display: inline-flex !important;
+}

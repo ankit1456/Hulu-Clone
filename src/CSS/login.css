@@ -1,0 +1,48 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("https://www.pcinvasion.com/wp-content/uploads/2020/07/A-second-Ubisoft-Forward-is-happening-this-September-1.jpg");
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+.login__container {
+  max-width: 60rem;
+  background-color: #000;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login__container > img {
+  width: 100%;
+  flex: 0.9;
+  object-fit: contain;
+}
+.login__container > p {
+  text-align: center;
+  color: green;
+  font-size: 3rem;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 99rem;
+  padding: 0.5rem;
+  width: 80%;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  box-shadow: 0.2rem 0.3rem 0.6rem 0.2rem rgba(255, 255, 255, 0.7);
+}
+.login__container > p:hover {
+  background-color: #167244;
+  color: rgb(206, 202, 202);
+  box-shadow: 0.2rem 0.4rem 0.7rem 0.1rem rgba(29, 128, 67, 0.7);
+}
+.login__container > p:active {
+  transform: translateY(0.4rem);
+}

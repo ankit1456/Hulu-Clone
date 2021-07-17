@@ -1,0 +1,10 @@
+.results {
+  padding-bottom: 2rem;
+}
+
+.results > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 3rem;
+}

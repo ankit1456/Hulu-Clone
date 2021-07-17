@@ -1,0 +1,223 @@
+.banner {
+  color: #fff;
+  object-fit: cover;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.banner__header {
+  padding: 3rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__HeaderLink {
+  margin-right: 4rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.banner__headerleft > .MuiSvgIcon-root {
+  font-size: 6rem;
+  background: transparent !important;
+  transition: all 0.3s ease-in-out;
+}
+.banner__HeaderLink:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.09);
+}
+.banner__headerleft > .MuiSvgIcon-root:hover {
+  transform: scale(1.5) !important;
+}
+.banner__logo {
+  object-fit: contain;
+  height: 8rem;
+}
+
+.banner__contents {
+  padding: 3rem 10rem;
+  max-width: 60%;
+}
+.banner__contents > h4 {
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.banner__title {
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.banner__description {
+  max-width: 80%;
+  line-height: 1.3;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.banner__buttons {
+  padding-top: 5rem;
+}
+.banner__btn {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  margin-right: 1.5rem;
+  padding-top: 0.9rem;
+  background-color: rgba(36, 35, 35, 0.6);
+  padding-bottom: 0.9rem;
+  transition: all 0.3s;
+  font-size: 2rem;
+}
+.banner__btnWhite {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.banner__btn:hover {
+  color: #000;
+  background-color: #e6e6e6;
+}
+.movie__stats {
+  font-size: 1.4rem;
+}
+.movie__stats > .MuiSvgIcon-root {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+.banner__lower {
+  margin-top: -15rem;
+}
+.video__trailer {
+  padding: 1rem;
+}
+.btn-trailer {
+  width: 20rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn-trailer:hover {
+  transform: translateY(0.5rem);
+}
+@media (max-width: 930px) {
+  .banner__HeaderLink {
+    margin-right: 3.6rem;
+  }
+  .banner__header {
+    padding: 3rem 5rem;
+  }
+  .banner__lower {
+    margin-top: -22rem;
+  }
+}
+@media (max-width: 890px) {
+  .banner__title {
+    font-size: 5.5rem;
+  }
+  .banner__HeaderLink {
+    margin-right: 3.4rem;
+  }
+  .banner__header {
+    padding: 3rem 4.4rem;
+  }
+  .banner__lower {
+    margin-top: -25rem;
+  }
+}
+@media (max-width: 830px) {
+  .banner__title {
+    font-size: 5.5rem;
+  }
+
+  .banner__header {
+    padding: 3rem 3rem;
+  }
+  .banner__HeaderLink {
+    margin-right: 2.5rem;
+  }
+  .banner__title {
+    font-size: 5.3rem;
+  }
+  .banner__contents {
+    max-width: 70%;
+  }
+}
+@media (max-width: 730px) {
+  .banner__lower {
+    margin-top: -30rem;
+  }
+  .banner__contents {
+    max-width: 80%;
+  }
+  .banner__header {
+    padding: 3rem 1rem;
+  }
+  .banner__HeaderLink {
+    margin-right: 1rem;
+  }
+  .banner__lower {
+    margin-top: -35rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .banner__contents {
+    max-width: 90%;
+  }
+  .banner__header {
+    padding: 3rem 0.5rem;
+  }
+  .banner__HeaderLink {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner__contents {
+    max-width: 100%;
+  }
+  .banner__header {
+    padding: 3rem 0.1rem;
+  }
+  .banner__HeaderLink {
+    margin-right: 0.3rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 470px) {
+  .banner__header {
+    padding: 3rem 0.1rem;
+  }
+  .banner__HeaderLink {
+    margin-right: 0.2rem;
+    font-size: 1.5rem;
+  }
+  .banner__lower {
+    margin-top: -40rem;
+  }
+}
